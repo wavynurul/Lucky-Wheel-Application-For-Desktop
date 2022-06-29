@@ -1,0 +1,25 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "views/main.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "windows": {
+    "title": "Undian-app",
+    "icon": "assets/icon.png",
+    "toolbar": true,
+    "widht":768,
+    "height":1024,
+    "min_widht":768,
+    "min_height":1024,
+    "max_widht":768,
+    "max_height":1024,
+    "position":"mouse"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
