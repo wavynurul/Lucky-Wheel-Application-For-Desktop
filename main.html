@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Lucky Wheel</title>
+</head>
+
+<body>
+
+  <div class="hidden" id="wheelPage">
+    <span id="wheelNameDisplay">Wheel name</span>
+    <span id="landingEntry">Press 'Spin'</span>
+
+    <div id="wheelContainer">
+    </div>
+
+    <button id="spin">Spin</button>
+    <button id="edit">Edit wheel</button>
+  </div>
+
+  <div class="hidden" id="createPage">
+    <span class="title">Create wheel</span>
+
+    <div class="settings">
+      <input placeholder="Wheel name" id="wheelName" />
+
+      <!--     <br>
+          <span>Options</span> -->
+      <hr>
+
+      <div id="entryList">
+      </div>
+
+      <button id="addEntry">+</button>
+
+      <hr>
+    </div>
+
+    <button id="createWheelButton">Create</button>
+  </div>
+
+  <label for="menuCheckbox" class="openMenu">
+    <div class="bars">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </label>
+
+  <input id="menuCheckbox" type="checkbox" />
+  <div class="menu">
+    <h3>Wheels</h3>
+    <ul id="wheelsList">
+    </ul>
+  </div>
+
+  <template id="wheelEntryTemplate">
+    <li class="wheelEntryContainer">
+      <span class="wheelEntry"></span>
+    </li>
+  </template>
+
+  <template id="entryItemTemplate">
+    <div class="entryItem">
+      <input placeholder="Type something" class="entryText" />
+      <button class="remove">✖</button>
+    </div>
+  </template>
+
+  <template id="errorTemplate">
+    <div class="errorPopupContainer">
+      <div class="errorPopup">
+        <span class="msg">Error message here</span>
+        <span class="close">x</span>
+      </div>
+    </div>
+  </template>
+  <script src="../app/index.js"></script>
+</body>
+
+</html>
